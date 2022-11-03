@@ -4456,3 +4456,858 @@ arm-none-eabi-size   lab2.elf
   26592	     92	   2164	  28848	   70b0	lab2.elf
 Finished building: default.size.stdout
  
+14:50:42 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/l3gd20.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/l3gd20.d" -MT"Drivers/BSP/STM32F429I-Discovery/l3gd20.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/l3gd20.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_eeprom.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_eeprom.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_eeprom.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_eeprom.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_io.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_io.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_io.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_io.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_ts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_ts.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_ts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_ts.o"
+In file included from ../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:39:
+../Drivers/BSP/STM32F429I-Discovery/l3gd20.h:48:10: fatal error: ../Common/gyro.h: No such file or directory
+   48 | #include "../Common/gyro.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/BSP/STM32F429I-Discovery/subdir.mk:40: Drivers/BSP/STM32F429I-Discovery/l3gd20.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:50:46 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+14:50:48 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+14:50:50 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+14:51:05 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/l3gd20.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/l3gd20.d" -MT"Drivers/BSP/STM32F429I-Discovery/l3gd20.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/l3gd20.o"
+In file included from ../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:39:
+../Drivers/BSP/STM32F429I-Discovery/l3gd20.h:48:10: fatal error: ../Common/gyro.h: No such file or directory
+   48 | #include "../Common/gyro.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/BSP/STM32F429I-Discovery/subdir.mk:40: Drivers/BSP/STM32F429I-Discovery/l3gd20.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:51:06 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+14:51:07 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+14:51:08 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+14:51:22 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/l3gd20.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/l3gd20.d" -MT"Drivers/BSP/STM32F429I-Discovery/l3gd20.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/l3gd20.o"
+In file included from ../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:39:
+../Drivers/BSP/STM32F429I-Discovery/l3gd20.h:48:10: fatal error: ../gyro.h: No such file or directory
+   48 | #include "../gyro.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/BSP/STM32F429I-Discovery/subdir.mk:40: Drivers/BSP/STM32F429I-Discovery/l3gd20.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:51:24 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+14:51:25 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+14:51:26 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+14:51:32 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/l3gd20.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/l3gd20.d" -MT"Drivers/BSP/STM32F429I-Discovery/l3gd20.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/l3gd20.o"
+arm-none-eabi-gcc -o "Gyroscope.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32CubeIDE_Workspsace\workspace_1.10.1\Gyroscope\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Gyroscope.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:80: multiple definition of `L3gd20Drv'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:80: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_Init':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:120: multiple definition of `L3GD20_Init'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:120: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_DeInit':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:143: multiple definition of `L3GD20_DeInit'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:143: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_ReadID':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:152: multiple definition of `L3GD20_ReadID'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:152: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_RebootCmd':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:171: multiple definition of `L3GD20_RebootCmd'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:171: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_LowPower':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:190: multiple definition of `L3GD20_LowPower'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:190: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_INT1InterruptConfig':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:204: multiple definition of `L3GD20_INT1InterruptConfig'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:204: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_EnableIT':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:235: multiple definition of `L3GD20_EnableIT'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:235: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_DisableIT':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:265: multiple definition of `L3GD20_DisableIT'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:265: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_FilterConfig':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:292: multiple definition of `L3GD20_FilterConfig'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:292: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_FilterCmd':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:316: multiple definition of `L3GD20_FilterCmd'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:316: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_ReadXYZAngRate':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:351: multiple definition of `L3GD20_ReadXYZAngRate'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:351: first defined here
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\bin\ld.exe: ./Drivers/BSP/STM32F429I-Discovery/l3gd20.o: in function `L3GD20_GetDataStatus':
+D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/STM32F429I-Discovery/l3gd20.c:336: multiple definition of `L3GD20_GetDataStatus'; ./Drivers/BSP/Components/l3gd20/l3gd20.o:D:/STM32CubeIDE_Workspsace/workspace_1.10.1/Gyroscope/Debug/../Drivers/BSP/Components/l3gd20/l3gd20.c:336: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:92: Gyroscope.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:51:36 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+14:51:36 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+14:51:37 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+15:07:00 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_eeprom.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_eeprom.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_eeprom.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_eeprom.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_io.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_io.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_io.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_io.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.o"
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_ts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_ts.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_ts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_ts.o"
+arm-none-eabi-gcc -o "Gyroscope.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32CubeIDE_Workspsace\workspace_1.10.1\Gyroscope\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Gyroscope.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Gyroscope.elf
+ 
+arm-none-eabi-size   Gyroscope.elf 
+arm-none-eabi-objdump -h -S  Gyroscope.elf  > "Gyroscope.list"
+   text	   data	    bss	    dec	    hex	filename
+  43864	    608	   2400	  46872	   b718	Gyroscope.elf
+Finished building: default.size.stdout
+ 
+Finished building: Gyroscope.list
+ 
+15:07:04 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+15:07:05 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+15:07:06 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+15:08:03 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+In file included from C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:31,
+                 from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:141:37: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  141 | uint8_t           BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:146:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  146 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:147:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  147 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:114:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  114 |    sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:115:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  115 |    sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:08:06 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+15:08:07 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+15:08:08 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+15:08:43 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:31,
+                 from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:141:37: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  141 | uint8_t           BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:146:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  146 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:147:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  147 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  113 |    sprintf(buffer, "x: %f", &valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:113:25: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+  113 |    sprintf(buffer, "x: %f", &valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |                        ~^   ~~~~~~~~~~
+      |                         |   |
+      |                         |   float *
+      |                         double
+../Core/Src/main.c:114:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  114 |    sprintf(buffer, "y: %f", &valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:114:25: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+  114 |    sprintf(buffer, "y: %f", &valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
+      |                        ~^   ~~~~~~~~~~
+      |                         |   |
+      |                         |   float *
+      |                         double
+../Core/Src/main.c:115:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  115 |    sprintf(buffer, "z: %f", &valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:115:25: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+  115 |    sprintf(buffer, "z: %f", &valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+      |                        ~^   ~~~~~~~~~~
+      |                         |   |
+      |                         |   float *
+      |                         double
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:08:44 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+15:08:45 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+15:08:46 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+15:09:02 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:31,
+                 from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:141:37: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  141 | uint8_t           BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:146:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  146 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:147:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  147 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,&buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:113:71: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,&buffer);
+      |                                                                       ^~~~~~~
+      |                                                                       |
+      |                                                                       uint8_t (*)[200] {aka unsigned char (*)[200]}
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[200]' {aka 'unsigned char (*)[200]'}
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+../Core/Src/main.c:114:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  114 |    sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,&buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:114:71: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |    sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,&buffer);
+      |                                                                       ^~~~~~~
+      |                                                                       |
+      |                                                                       uint8_t (*)[200] {aka unsigned char (*)[200]}
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[200]' {aka 'unsigned char (*)[200]'}
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+../Core/Src/main.c:115:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  115 |    sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,&buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:115:71: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |    sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,&buffer);
+      |                                                                       ^~~~~~~
+      |                                                                       |
+      |                                                                       uint8_t (*)[200] {aka unsigned char (*)[200]}
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t (*)[200]' {aka 'unsigned char (*)[200]'}
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:09:03 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+15:09:03 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+15:09:04 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+15:10:05 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:31,
+                 from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:141:37: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  141 | uint8_t           BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:146:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  146 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:147:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  147 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Core/Src/main.c:49:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'buffer'
+   49 | unsigned uint8_t buffer[200];
+      |                  ^~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:12: error: 'buffer' undeclared (first use in this function); did you mean 'setbuffer'?
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |            ^~~~~~
+      |            setbuffer
+../Core/Src/main.c:113:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:10:06 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+15:10:07 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+15:10:09 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+15:10:17 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:31,
+                 from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:141:37: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  141 | uint8_t           BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:146:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  146 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:147:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  147 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:12: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |            ^~~~~~
+      |            |
+      |            unsigned int *
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'unsigned int *'
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:113:71: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |                                                                       ^~~~~~
+      |                                                                       |
+      |                                                                       unsigned int *
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'unsigned int *'
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+../Core/Src/main.c:114:12: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |    sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
+      |            ^~~~~~
+      |            |
+      |            unsigned int *
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'unsigned int *'
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:114:71: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |    sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
+      |                                                                       ^~~~~~
+      |                                                                       |
+      |                                                                       unsigned int *
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'unsigned int *'
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+../Core/Src/main.c:115:12: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |    sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+      |            ^~~~~~
+      |            |
+      |            unsigned int *
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'unsigned int *'
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:115:71: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |    sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+      |                                                                       ^~~~~~
+      |                                                                       |
+      |                                                                       unsigned int *
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'unsigned int *'
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:10:18 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+15:10:20 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+15:10:21 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+15:11:05 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:31,
+                 from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:141:37: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  141 | uint8_t           BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:146:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  146 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:147:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  147 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:12: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t ** {aka unsigned char **}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:113:71: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |                                                                       ^~~~~~
+      |                                                                       |
+      |                                                                       uint8_t ** {aka unsigned char **}
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+../Core/Src/main.c:114:12: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |    sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t ** {aka unsigned char **}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:114:71: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |    sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
+      |                                                                       ^~~~~~
+      |                                                                       |
+      |                                                                       uint8_t ** {aka unsigned char **}
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+../Core/Src/main.c:115:12: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |    sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t ** {aka unsigned char **}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:115:71: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |    sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+      |                                                                       ^~~~~~
+      |                                                                       |
+      |                                                                       uint8_t ** {aka unsigned char **}
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:11:07 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+15:11:08 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+15:11:09 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+15:11:28 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:31,
+                 from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:141:37: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  141 | uint8_t           BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:146:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  146 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:147:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  147 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:12: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  113 |    sprintf(&buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,&buffer);
+      |            ^~~~~~~
+      |            |
+      |            uint8_t * (*)[200] {aka unsigned char * (*)[200]}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t * (*)[200]' {aka 'unsigned char * (*)[200]'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:113:72: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  113 |    sprintf(&buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,&buffer);
+      |                                                                        ^~~~~~~
+      |                                                                        |
+      |                                                                        uint8_t * (*)[200] {aka unsigned char * (*)[200]}
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t * (*)[200]' {aka 'unsigned char * (*)[200]'}
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+../Core/Src/main.c:114:12: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |    sprintf(&buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,&buffer);
+      |            ^~~~~~~
+      |            |
+      |            uint8_t * (*)[200] {aka unsigned char * (*)[200]}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t * (*)[200]' {aka 'unsigned char * (*)[200]'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:114:72: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  114 |    sprintf(&buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,&buffer);
+      |                                                                        ^~~~~~~
+      |                                                                        |
+      |                                                                        uint8_t * (*)[200] {aka unsigned char * (*)[200]}
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t * (*)[200]' {aka 'unsigned char * (*)[200]'}
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+../Core/Src/main.c:115:12: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |    sprintf(&buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,&buffer);
+      |            ^~~~~~~
+      |            |
+      |            uint8_t * (*)[200] {aka unsigned char * (*)[200]}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t * (*)[200]' {aka 'unsigned char * (*)[200]'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:115:72: warning: passing argument 2 of 'BSP_LCD_DisplayStringAtLine' from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |    sprintf(&buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,&buffer);
+      |                                                                        ^~~~~~~
+      |                                                                        |
+      |                                                                        uint8_t * (*)[200] {aka unsigned char * (*)[200]}
+In file included from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:199:62: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t * (*)[200]' {aka 'unsigned char * (*)[200]'}
+  199 | void     BSP_LCD_DisplayStringAtLine(uint16_t Line, uint8_t *ptr);
+      |                                                     ~~~~~~~~~^~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:11:29 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+15:11:30 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+15:11:31 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 
+15:11:49 **** Incremental Build of configuration Debug for project Gyroscope ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:31,
+                 from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:141:37: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  141 | uint8_t           BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:146:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  146 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:147:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  147 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:114:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  114 |    sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:115:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  115 |    sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:11:50 **** Incremental Build of configuration Debug for project LEDBlink ****
+make -j8 all 
+arm-none-eabi-size   LEDBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6344	     20	   1572	   7936	   1f00	LEDBlink.elf
+Finished building: default.size.stdout
+ 
+15:11:51 **** Incremental Build of configuration Debug for project Lab1 ****
+make -j8 all 
+arm-none-eabi-size   Lab1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8240	     20	   1644	   9904	   26b0	Lab1.elf
+Finished building: default.size.stdout
+ 
+15:11:52 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+arm-none-eabi-size   lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26592	     92	   2164	  28848	   70b0	lab2.elf
+Finished building: default.size.stdout
+ 

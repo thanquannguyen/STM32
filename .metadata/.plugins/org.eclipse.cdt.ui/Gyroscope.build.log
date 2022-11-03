@@ -1,16 +1,49 @@
-13:49:33 **** Incremental Build of configuration Debug for project Gyroscope ****
+15:11:49 **** Incremental Build of configuration Debug for project Gyroscope ****
 make -j8 all 
-arm-none-eabi-gcc -o "Gyroscope.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32CubeIDE_Workspsace\workspace_1.10.1\Gyroscope\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Gyroscope.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Gyroscope.elf
- 
-arm-none-eabi-size   Gyroscope.elf 
-arm-none-eabi-objdump -h -S  Gyroscope.elf  > "Gyroscope.list"
-   text	   data	    bss	    dec	    hex	filename
-  43864	    608	   2400	  46872	   b718	Gyroscope.elf
-Finished building: default.size.stdout
- 
-Finished building: Gyroscope.list
- 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/CMSIS/Include -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:31,
+                 from ../Core/Src/main.c:24:
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:141:37: error: unknown type name 'FMC_SDRAM_CommandTypeDef'
+  141 | uint8_t           BSP_SDRAM_Sendcmd(FMC_SDRAM_CommandTypeDef *SdramCmd);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:146:27: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  146 | void    BSP_SDRAM_MspInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                           ^~~~~~~~~~~~~~~~~~~
+      |                           DMA_HandleTypeDef
+C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_sdram.h:147:29: error: unknown type name 'SDRAM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+  147 | void    BSP_SDRAM_MspDeInit(SDRAM_HandleTypeDef  *hsdram, void *Params);
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             DMA_HandleTypeDef
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  113 |    sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:114:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  114 |    sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+../Core/Src/main.c:115:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  115 |    sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+      |            ^~~~~~
+      |            |
+      |            uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:27:
+d:\apps\st\stm32cubeide_1.10.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\stdio.h:244:14: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  244 | int sprintf (char *__restrict, const char *__restrict, ...)
+      |              ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
 
-13:49:37 Build Finished. 0 errors, 0 warnings. (took 4s.129ms)
+15:11:50 Build Failed. 4 errors, 3 warnings. (took 911ms)
 
