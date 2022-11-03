@@ -1,0 +1,7 @@
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.c:79:9:BSP_GYRO_Init	24	static
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.c:170:9:BSP_GYRO_ReadID	16	static
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.c:184:6:BSP_GYRO_Reset	8	static
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.c:197:6:BSP_GYRO_ITConfig	24	static
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.c:222:6:BSP_GYRO_EnableIT	16	static
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.c:239:6:BSP_GYRO_DisableIT	16	static
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_gyroscope.c:251:6:BSP_GYRO_GetXYZ	16	static
