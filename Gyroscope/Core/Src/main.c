@@ -92,17 +92,15 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI5_Init();
   /* USER CODE BEGIN 2 */
-
+  /* USER CODE BEGIN 2 */
   BSP_LCD_Init();
   BSP_LCD_LayerDefaultInit(1, SDRAM_DEVICE_ADDR);
-  BSP_LCD_SelectLayer(1);
-  BSP_LCD_DisplayOn();
+  BSP_LCD_SelectLayer(1); BSP_LCD_DisplayOn();
   BSP_LCD_Clear(LCD_COLOR_BLUE);
   BSP_LCD_SetBackColor(LCD_COLOR_BLUE);
   BSP_LCD_SetTextColor(LCD_COLOR_WHITE);
 
   BSP_GYRO_Init();
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -110,9 +108,12 @@ int main(void)
   while (1)
   {
 	  BSP_GYRO_GetXYZ(valxyz);
-	  sprintf(buffer, "x: %f", valxyz[0]); BSP_LCD_DisplayStringAtLine(2,buffer);
-	  sprintf(buffer, "y: %f", valxyz[1]); BSP_LCD_DisplayStringAtLine(3,buffer);
-	  sprintf(buffer, "z: %f", valxyz[2]); BSP_LCD_DisplayStringAtLine(4,buffer);
+	  sprintf(buffer,"x:%f",valxyz[0]);
+	  BSP_LCD_DisplayStringAtLine(2,buffer);
+	  sprintf(buffer,"y:%f",valxyz[1]);
+	  BSP_LCD_DisplayStringAtLine(3,buffer);
+	  sprintf(buffer,"z:%f",valxyz[2]);
+	  BSP_LCD_DisplayStringAtLine(4,buffer);
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
