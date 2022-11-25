@@ -1,0 +1,312 @@
+08:25:23 **** Incremental Build of configuration Debug for project lab3bt ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I"C:/Users/quann/STM32Cube/Repository/STM32Cube_FW_F4_V1.27.1/Drivers/BSP/STM32F429I-Discovery" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.d" -MT"Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.o"
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:106:1: error: unknown type name 'LTDC_HandleTypeDef'; did you mean 'PCD_HandleTypeDef'?
+  106 | LTDC_HandleTypeDef  LtdcHandler;
+      | ^~~~~~~~~~~~~~~~~~
+      | PCD_HandleTypeDef
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_Init':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:144:16: error: request for member 'Instance' in something not a structure or union
+  144 |     LtdcHandler.Instance = LTDC;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:159:16: error: request for member 'Init' in something not a structure or union
+  159 |     LtdcHandler.Init.HorizontalSync = ILI9341_HSYNC;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:161:16: error: request for member 'Init' in something not a structure or union
+  161 |     LtdcHandler.Init.VerticalSync = ILI9341_VSYNC;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:163:16: error: request for member 'Init' in something not a structure or union
+  163 |     LtdcHandler.Init.AccumulatedHBP = ILI9341_HBP;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:165:16: error: request for member 'Init' in something not a structure or union
+  165 |     LtdcHandler.Init.AccumulatedVBP = ILI9341_VBP;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:167:16: error: request for member 'Init' in something not a structure or union
+  167 |     LtdcHandler.Init.AccumulatedActiveW = 269;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:169:16: error: request for member 'Init' in something not a structure or union
+  169 |     LtdcHandler.Init.AccumulatedActiveH = 323;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:171:16: error: request for member 'Init' in something not a structure or union
+  171 |     LtdcHandler.Init.TotalWidth = 279;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:173:16: error: request for member 'Init' in something not a structure or union
+  173 |     LtdcHandler.Init.TotalHeigh = 327;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:176:16: error: request for member 'Init' in something not a structure or union
+  176 |     LtdcHandler.Init.Backcolor.Red= 0;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:177:16: error: request for member 'Init' in something not a structure or union
+  177 |     LtdcHandler.Init.Backcolor.Blue= 0;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:178:16: error: request for member 'Init' in something not a structure or union
+  178 |     LtdcHandler.Init.Backcolor.Green= 0;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:192:16: error: request for member 'Init' in something not a structure or union
+  192 |     LtdcHandler.Init.HSPolarity = LTDC_HSPOLARITY_AL;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:192:35: error: 'LTDC_HSPOLARITY_AL' undeclared (first use in this function)
+  192 |     LtdcHandler.Init.HSPolarity = LTDC_HSPOLARITY_AL;
+      |                                   ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:192:35: note: each undeclared identifier is reported only once for each function it appears in
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:193:16: error: request for member 'Init' in something not a structure or union
+  193 |     LtdcHandler.Init.VSPolarity = LTDC_VSPOLARITY_AL;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:193:35: error: 'LTDC_VSPOLARITY_AL' undeclared (first use in this function)
+  193 |     LtdcHandler.Init.VSPolarity = LTDC_VSPOLARITY_AL;
+      |                                   ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:194:16: error: request for member 'Init' in something not a structure or union
+  194 |     LtdcHandler.Init.DEPolarity = LTDC_DEPOLARITY_AL;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:194:35: error: 'LTDC_DEPOLARITY_AL' undeclared (first use in this function)
+  194 |     LtdcHandler.Init.DEPolarity = LTDC_DEPOLARITY_AL;
+      |                                   ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:195:16: error: request for member 'Init' in something not a structure or union
+  195 |     LtdcHandler.Init.PCPolarity = LTDC_PCPOLARITY_IPC;
+      |                ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:195:35: error: 'LTDC_PCPOLARITY_IPC' undeclared (first use in this function)
+  195 |     LtdcHandler.Init.PCPolarity = LTDC_PCPOLARITY_IPC;
+      |                                   ^~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:198:5: warning: implicit declaration of function 'HAL_LTDC_Init'; did you mean 'HAL_PCD_Init'? [-Wimplicit-function-declaration]
+  198 |     HAL_LTDC_Init(&LtdcHandler);
+      |     ^~~~~~~~~~~~~
+      |     HAL_PCD_Init
+In file included from ../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:58:
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_LayerDefaultInit':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:87:32: error: unknown type name 'LTDC_LayerCfgTypeDef'; did you mean 'LCD_LayerCfgTypeDef'?
+   87 | #define LCD_LayerCfgTypeDef    LTDC_LayerCfgTypeDef
+      |                                ^~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:240:3: note: in expansion of macro 'LCD_LayerCfgTypeDef'
+  240 |   LCD_LayerCfgTypeDef   Layercfg;
+      |   ^~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:243:11: error: request for member 'WindowX0' in something not a structure or union
+  243 |   Layercfg.WindowX0 = 0;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:244:11: error: request for member 'WindowX1' in something not a structure or union
+  244 |   Layercfg.WindowX1 = BSP_LCD_GetXSize();
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:245:11: error: request for member 'WindowY0' in something not a structure or union
+  245 |   Layercfg.WindowY0 = 0;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:246:11: error: request for member 'WindowY1' in something not a structure or union
+  246 |   Layercfg.WindowY1 = BSP_LCD_GetYSize();
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:247:11: error: request for member 'PixelFormat' in something not a structure or union
+  247 |   Layercfg.PixelFormat = LTDC_PIXEL_FORMAT_ARGB8888;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:247:26: error: 'LTDC_PIXEL_FORMAT_ARGB8888' undeclared (first use in this function); did you mean 'LCD_PIXEL_FORMAT_ARGB8888'?
+  247 |   Layercfg.PixelFormat = LTDC_PIXEL_FORMAT_ARGB8888;
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                          LCD_PIXEL_FORMAT_ARGB8888
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:248:11: error: request for member 'FBStartAdress' in something not a structure or union
+  248 |   Layercfg.FBStartAdress = FB_Address;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:249:11: error: request for member 'Alpha' in something not a structure or union
+  249 |   Layercfg.Alpha = 255;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:250:11: error: request for member 'Alpha0' in something not a structure or union
+  250 |   Layercfg.Alpha0 = 0;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:251:11: error: request for member 'Backcolor' in something not a structure or union
+  251 |   Layercfg.Backcolor.Blue = 0;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:252:11: error: request for member 'Backcolor' in something not a structure or union
+  252 |   Layercfg.Backcolor.Green = 0;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:253:11: error: request for member 'Backcolor' in something not a structure or union
+  253 |   Layercfg.Backcolor.Red = 0;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:254:11: error: request for member 'BlendingFactor1' in something not a structure or union
+  254 |   Layercfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:254:30: error: 'LTDC_BLENDING_FACTOR1_PAxCA' undeclared (first use in this function)
+  254 |   Layercfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:255:11: error: request for member 'BlendingFactor2' in something not a structure or union
+  255 |   Layercfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA;
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:255:30: error: 'LTDC_BLENDING_FACTOR2_PAxCA' undeclared (first use in this function)
+  255 |   Layercfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA;
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:256:11: error: request for member 'ImageWidth' in something not a structure or union
+  256 |   Layercfg.ImageWidth = BSP_LCD_GetXSize();
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:257:11: error: request for member 'ImageHeight' in something not a structure or union
+  257 |   Layercfg.ImageHeight = BSP_LCD_GetYSize();
+      |           ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:259:3: warning: implicit declaration of function 'HAL_LTDC_ConfigLayer'; did you mean 'HAL_DMA2D_ConfigLayer'? [-Wimplicit-function-declaration]
+  259 |   HAL_LTDC_ConfigLayer(&LtdcHandler, &Layercfg, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~
+      |   HAL_DMA2D_ConfigLayer
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:266:3: warning: implicit declaration of function 'HAL_LTDC_EnableDither' [-Wimplicit-function-declaration]
+  266 |   HAL_LTDC_EnableDither(&LtdcHandler);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_SetLayerVisible':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:288:5: warning: implicit declaration of function '__HAL_LTDC_LAYER_ENABLE' [-Wimplicit-function-declaration]
+  288 |     __HAL_LTDC_LAYER_ENABLE(&LtdcHandler, LayerIndex);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:292:5: warning: implicit declaration of function '__HAL_LTDC_LAYER_DISABLE' [-Wimplicit-function-declaration]
+  292 |     __HAL_LTDC_LAYER_DISABLE(&LtdcHandler, LayerIndex);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:30,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.h:33,
+                 from ../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:29,
+                 from ../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:58:
+../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3927:35: warning: implicit declaration of function '__HAL_LTDC_RELOAD_IMMEDIATE_CONFIG' [-Wimplicit-function-declaration]
+ 3927 | #define __HAL_LTDC_RELOAD_CONFIG  __HAL_LTDC_RELOAD_IMMEDIATE_CONFIG
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:3927:35: note: in definition of macro '__HAL_LTDC_RELOAD_CONFIG'
+ 3927 | #define __HAL_LTDC_RELOAD_CONFIG  __HAL_LTDC_RELOAD_IMMEDIATE_CONFIG
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_SetTransparency':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:327:3: warning: implicit declaration of function 'HAL_LTDC_SetAlpha'; did you mean 'HAL_LTDC_Relaod'? [-Wimplicit-function-declaration]
+  327 |   HAL_LTDC_SetAlpha(&LtdcHandler, Transparency, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_LTDC_Relaod
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_SetTransparency_NoReload':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:339:3: warning: implicit declaration of function 'HAL_LTDC_SetAlpha_NoReload' [-Wimplicit-function-declaration]
+  339 |   HAL_LTDC_SetAlpha_NoReload(&LtdcHandler, Transparency, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_SetLayerAddress':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:349:3: warning: implicit declaration of function 'HAL_LTDC_SetAddress'; did you mean 'HAL_PCD_SetAddress'? [-Wimplicit-function-declaration]
+  349 |   HAL_LTDC_SetAddress(&LtdcHandler, Address, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   HAL_PCD_SetAddress
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_SetLayerAddress_NoReload':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:360:3: warning: implicit declaration of function 'HAL_LTDC_SetAddress_NoReload'; did you mean 'BSP_LCD_SetLayerAddress_NoReload'? [-Wimplicit-function-declaration]
+  360 |   HAL_LTDC_SetAddress_NoReload(&LtdcHandler, Address, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_LCD_SetLayerAddress_NoReload
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_SetLayerWindow':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:374:3: warning: implicit declaration of function 'HAL_LTDC_SetWindowSize' [-Wimplicit-function-declaration]
+  374 |   HAL_LTDC_SetWindowSize(&LtdcHandler, Width, Height, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:377:3: warning: implicit declaration of function 'HAL_LTDC_SetWindowPosition' [-Wimplicit-function-declaration]
+  377 |   HAL_LTDC_SetWindowPosition(&LtdcHandler, Xpos, Ypos, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_SetLayerWindow_NoReload':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:392:3: warning: implicit declaration of function 'HAL_LTDC_SetWindowSize_NoReload' [-Wimplicit-function-declaration]
+  392 |   HAL_LTDC_SetWindowSize_NoReload(&LtdcHandler, Width, Height, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:395:3: warning: implicit declaration of function 'HAL_LTDC_SetWindowPosition_NoReload' [-Wimplicit-function-declaration]
+  395 |   HAL_LTDC_SetWindowPosition_NoReload(&LtdcHandler, Xpos, Ypos, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_SetColorKeying':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:406:3: warning: implicit declaration of function 'HAL_LTDC_ConfigColorKeying' [-Wimplicit-function-declaration]
+  406 |   HAL_LTDC_ConfigColorKeying(&LtdcHandler, RGBValue, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:407:3: warning: implicit declaration of function 'HAL_LTDC_EnableColorKeying' [-Wimplicit-function-declaration]
+  407 |   HAL_LTDC_EnableColorKeying(&LtdcHandler, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_SetColorKeying_NoReload':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:419:3: warning: implicit declaration of function 'HAL_LTDC_ConfigColorKeying_NoReload'; did you mean 'BSP_LCD_ResetColorKeying_NoReload'? [-Wimplicit-function-declaration]
+  419 |   HAL_LTDC_ConfigColorKeying_NoReload(&LtdcHandler, RGBValue, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_LCD_ResetColorKeying_NoReload
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:420:3: warning: implicit declaration of function 'HAL_LTDC_EnableColorKeying_NoReload'; did you mean 'BSP_LCD_ResetColorKeying_NoReload'? [-Wimplicit-function-declaration]
+  420 |   HAL_LTDC_EnableColorKeying_NoReload(&LtdcHandler, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_LCD_ResetColorKeying_NoReload
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_ResetColorKeying':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:430:3: warning: implicit declaration of function 'HAL_LTDC_DisableColorKeying' [-Wimplicit-function-declaration]
+  430 |   HAL_LTDC_DisableColorKeying(&LtdcHandler, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_ResetColorKeying_NoReload':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:441:3: warning: implicit declaration of function 'HAL_LTDC_DisableColorKeying_NoReload'; did you mean 'BSP_LCD_ResetColorKeying_NoReload'? [-Wimplicit-function-declaration]
+  441 |   HAL_LTDC_DisableColorKeying_NoReload(&LtdcHandler, LayerIndex);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   BSP_LCD_ResetColorKeying_NoReload
+In file included from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:30,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery.h:33,
+                 from ../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.h:29,
+                 from ../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:58:
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_Relaod':
+../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:1846:35: warning: implicit declaration of function 'HAL_LTDC_Reload'; did you mean 'HAL_LTDC_Relaod'? [-Wimplicit-function-declaration]
+ 1846 | #define HAL_LTDC_Relaod           HAL_LTDC_Reload
+      |                                   ^~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:453:3: note: in expansion of macro 'HAL_LTDC_Relaod'
+  453 |   HAL_LTDC_Relaod (&LtdcHandler, ReloadType);
+      |   ^~~~~~~~~~~~~~~
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_ReadPixel':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:520:17: error: request for member 'LayerCfg' in something not a structure or union
+  520 |   if(LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_ARGB8888)
+      |                 ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:520:55: error: 'LTDC_PIXEL_FORMAT_ARGB8888' undeclared (first use in this function); did you mean 'LCD_PIXEL_FORMAT_ARGB8888'?
+  520 |   if(LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_ARGB8888)
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                       LCD_PIXEL_FORMAT_ARGB8888
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:523:41: error: request for member 'LayerCfg' in something not a structure or union
+  523 |     ret = *(__IO uint32_t*) (LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (4*(Ypos*BSP_LCD_GetXSize() + Xpos)));
+      |                                         ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:525:22: error: request for member 'LayerCfg' in something not a structure or union
+  525 |   else if(LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB888)
+      |                      ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:525:60: error: 'LTDC_PIXEL_FORMAT_RGB888' undeclared (first use in this function); did you mean 'LCD_PIXEL_FORMAT_RGB888'?
+  525 |   else if(LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB888)
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                            LCD_PIXEL_FORMAT_RGB888
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:528:42: error: request for member 'LayerCfg' in something not a structure or union
+  528 |     ret = (*(__IO uint32_t*) (LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (4*(Ypos*BSP_LCD_GetXSize() + Xpos))) & 0x00FFFFFF);
+      |                                          ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:530:23: error: request for member 'LayerCfg' in something not a structure or union
+  530 |   else if((LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565) || \
+      |                       ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:530:61: error: 'LTDC_PIXEL_FORMAT_RGB565' undeclared (first use in this function); did you mean 'LCD_PIXEL_FORMAT_RGB565'?
+  530 |   else if((LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_RGB565) || \
+      |                                                             ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                             LCD_PIXEL_FORMAT_RGB565
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:531:23: error: request for member 'LayerCfg' in something not a structure or union
+  531 |           (LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_ARGB4444) || \
+      |                       ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:531:61: error: 'LTDC_PIXEL_FORMAT_ARGB4444' undeclared (first use in this function); did you mean 'LCD_PIXEL_FORMAT_ARGB4444'?
+  531 |           (LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_ARGB4444) || \
+      |                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                             LCD_PIXEL_FORMAT_ARGB4444
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:532:23: error: request for member 'LayerCfg' in something not a structure or union
+  532 |           (LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_AL88))
+      |                       ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:532:61: error: 'LTDC_PIXEL_FORMAT_AL88' undeclared (first use in this function); did you mean 'LCD_PIXEL_FORMAT_AL88'?
+  532 |           (LtdcHandler.LayerCfg[ActiveLayer].PixelFormat == LTDC_PIXEL_FORMAT_AL88))
+      |                                                             ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                             LCD_PIXEL_FORMAT_AL88
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:535:41: error: request for member 'LayerCfg' in something not a structure or union
+  535 |     ret = *(__IO uint16_t*) (LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (2*(Ypos*BSP_LCD_GetXSize() + Xpos)));
+      |                                         ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:540:40: error: request for member 'LayerCfg' in something not a structure or union
+  540 |     ret = *(__IO uint8_t*) (LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (2*(Ypos*BSP_LCD_GetXSize() + Xpos)));
+      |                                        ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_Clear':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:553:51: error: request for member 'LayerCfg' in something not a structure or union
+  553 |   FillBuffer(ActiveLayer, (uint32_t *)(LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress), BSP_LCD_GetXSize(), BSP_LCD_GetYSize(), 0, Color);
+      |                                                   ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_DrawHLine':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:665:26: error: request for member 'LayerCfg' in something not a structure or union
+  665 |   xaddress = (LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress) + 4*(BSP_LCD_GetXSize()*Ypos + Xpos);
+      |                          ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_DrawVLine':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:682:26: error: request for member 'LayerCfg' in something not a structure or union
+  682 |   xaddress = (LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress) + 4*(BSP_LCD_GetXSize()*Ypos + Xpos);
+      |                          ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_DrawBitmap':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:903:24: error: request for member 'LayerCfg' in something not a structure or union
+  903 |   address = LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (((BSP_LCD_GetXSize()*Y) + X)*(4));
+      |                        ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_FillRect':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:949:26: error: request for member 'LayerCfg' in something not a structure or union
+  949 |   xaddress = (LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress) + 4*(BSP_LCD_GetXSize()*Ypos + Xpos);
+      |                          ^
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c: In function 'BSP_LCD_DrawPixel':
+../Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.c:1294:33: error: request for member 'LayerCfg' in something not a structure or union
+ 1294 |   *(__IO uint32_t*) (LtdcHandler.LayerCfg[ActiveLayer].FBStartAdress + (4*(Ypos*BSP_LCD_GetXSize() + Xpos))) = RGB_Code;
+      |                                 ^
+make: *** [Drivers/BSP/STM32F429I-Discovery/subdir.mk:37: Drivers/BSP/STM32F429I-Discovery/stm32f429i_discovery_lcd.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+08:25:29 Build Failed. 61 errors, 21 warnings. (took 5s.451ms)
+

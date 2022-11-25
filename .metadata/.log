@@ -1402,3 +1402,66 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-11-03 16:16:46.257
 !MESSAGE Indexed 'Gyroscope' (57 sources, 131 headers) in 2.78 sec: 9,422 declarations; 40,270 references; 0 unresolved inclusions; 1 syntax errors; 236 unresolved names (0.47%)
+!SESSION 2022-11-23 21:55:09.240 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-11-23 21:56:09.326
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-11-23 21:56:21.184
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-11-23 21:56:21.434
+!MESSAGE Log4j initialized with config file D:\STM32CubeIDE_Workspsace\workspace_1.10.1\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-11-23 21:57:25.664
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-23 21:59:36.262
+!MESSAGE Indexed 'lab3' (19 sources, 81 headers) in 6.84 sec: 4,571 declarations; 19,301 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0084%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-23 22:28:11.832
+!MESSAGE Indexed 'lab3bt' (19 sources, 81 headers) in 2.76 sec: 4,571 declarations; 19,301 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0084%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-23 22:39:49.385
+!MESSAGE Indexed 'lab3bt' (68 sources, 145 headers) in 3.51 sec: 10,869 declarations; 45,580 references; 0 unresolved inclusions; 1 syntax errors; 273 unresolved names (0.48%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2022-11-23 23:44:48.287
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+!SESSION 2022-11-24 08:04:50.635 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-11-24 08:05:36.563
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-11-24 08:05:36.815
+!MESSAGE Log4j initialized with config file D:\STM32CubeIDE_Workspsace\workspace_1.10.1\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-11-24 08:06:16.078
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-11-25 08:20:10.486 -----------------------------------------------
+eclipse.buildId=Version 1.10.1
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-11-25 08:20:31.929
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-11-25 08:20:32.237
+!MESSAGE Log4j initialized with config file D:\STM32CubeIDE_Workspsace\workspace_1.10.1\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-11-25 08:21:17.943
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-11-25 08:24:20.971
+!MESSAGE Indexed 'lab4' (19 sources, 81 headers) in 7.07 sec: 4,571 declarations; 19,301 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0084%)

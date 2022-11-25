@@ -1,16 +1,10 @@
-16:24:00 **** Incremental Build of configuration Debug for project Gyroscope ****
+23:49:24 **** Incremental Build of configuration Debug for project Gyroscope ****
 make -j8 all 
-arm-none-eabi-gcc -o "Gyroscope.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\STM32CubeIDE_Workspsace\workspace_1.10.1\Gyroscope\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Gyroscope.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: Gyroscope.elf
- 
 arm-none-eabi-size   Gyroscope.elf 
-arm-none-eabi-objdump -h -S  Gyroscope.elf  > "Gyroscope.list"
    text	   data	    bss	    dec	    hex	filename
   44704	    608	   2488	  47800	   bab8	Gyroscope.elf
 Finished building: default.size.stdout
  
-Finished building: Gyroscope.list
- 
 
-16:24:02 Build Finished. 0 errors, 0 warnings. (took 2s.203ms)
+23:49:26 Build Finished. 0 errors, 0 warnings. (took 1s.909ms)
 
