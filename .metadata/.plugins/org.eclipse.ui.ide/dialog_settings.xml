@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.st.stm32cube.common.feature.mx.stinsider:6.7.0.202211181646"/>
+		<item value="com.st.stm32cube.common.feature.mx:6.7.0.202211181646"/>
+		<item value="org.eclipse.cdt.debug.gdbjtag:10.6.2.202205081303"/>
+		<item value="org.eclipse.cdt.gdb:10.6.2.202205081303"/>
+		<item value="org.eclipse.cdt.native:10.6.2.202205170638"/>
+		<item value="org.eclipse.cdt.platform:10.6.2.202205170638"/>
+		<item value="org.eclipse.cdt:10.6.2.202205170638"/>
+		<item value="org.eclipse.emf.common:2.25.0.v20220123-0838"/>
+		<item value="org.eclipse.emf.ecore:2.27.0.v20220123-0838"/>
+		<item value="org.eclipse.epp.mpc:1.9.3.v20220121-1317"/>
+		<item value="org.eclipse.help:2.3.900.v20220308-0310"/>
+		<item value="org.eclipse.platform:4.23.0.v20220308-0722"/>
+		<item value="org.eclipse.rcp:4.23.0.v20220308-0722"/>
+		<item value="org.eclipse.remote.console:10.6.2.202205081303"/>
+		<item value="org.eclipse.remote.serial:10.6.2.202205081303"/>
+		<item value="org.eclipse.remote:10.6.2.202205081303"/>
+		<item value="org.eclipse.tm.terminal.control.feature:10.6.2.202205081303"/>
+		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
+	</list>
 	<section name="ExternalProjectImportWizard">
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
 	</section>

@@ -1,4 +1,4 @@
-23:49:24 **** Incremental Build of configuration Debug for project Gyroscope ****
+21:20:53 **** Incremental Build of configuration Debug for project Gyroscope ****
 make -j8 all 
 arm-none-eabi-size   Gyroscope.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   Gyroscope.elf
 Finished building: default.size.stdout
  
 
-23:49:26 Build Finished. 0 errors, 0 warnings. (took 1s.909ms)
+21:20:55 Build Finished. 0 errors, 0 warnings. (took 2s.358ms)
 

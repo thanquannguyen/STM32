@@ -8,5 +8,6 @@
 		<item key="askReindex.detail" value="0"/>
 	</section>
 	<section name="CResourceRenameRefactoringInputPage">
+		<item key="updateReferences" value="true"/>
 	</section>
 </section>

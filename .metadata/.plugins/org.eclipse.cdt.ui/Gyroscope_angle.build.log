@@ -1,0 +1,10 @@
+21:23:06 **** Incremental Build of configuration Debug for project Gyroscope_angle ****
+make -j8 all 
+arm-none-eabi-size   Gyroscope_angle.elf 
+   text	   data	    bss	    dec	    hex	filename
+  43064	    608	   2312	  45984	   b3a0	Gyroscope_angle.elf
+Finished building: default.size.stdout
+ 
+
+21:23:08 Build Finished. 0 errors, 0 warnings. (took 2s.24ms)
+
